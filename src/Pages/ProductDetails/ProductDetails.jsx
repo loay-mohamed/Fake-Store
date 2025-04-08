@@ -39,7 +39,6 @@ export default function ProductDetails() {
   {ProductDetails ? (
     <section className="container mx-auto px-6 py-10 bg-slate-200 mt-9">
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-black p-6 rounded-lg shadow-lg">
-        {/* 🖼 معرض الصور */}
         <div className="col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
           <ImageGallery
             items={ProductDetails.images.map((image) => ({
@@ -52,7 +51,6 @@ export default function ProductDetails() {
           />
         </div>
 
-        {/* 📜 تفاصيل المنتج */}
         <div className="col-span-1 md:col-span-1 lg:col-span-2 xl:col-span-3 space-y-6">
           <div>
             <h2 className="text-3xl font-bold text-white">{ProductDetails.title}</h2>
