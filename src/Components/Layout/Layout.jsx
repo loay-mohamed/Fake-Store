@@ -3,7 +3,7 @@ import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
-export default function App() {
+export default function Layout() {
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
   const location = useLocation();
